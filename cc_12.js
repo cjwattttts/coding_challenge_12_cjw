@@ -47,3 +47,36 @@ metricCards.forEach(card=> { // updates each card
 });
 
 // TASK 3
+document.addEventListener('DOMContentLoaded', () => {
+
+    function createProductItem(productName) {
+        const productItem = document.createElement("li"); // creates a list item for the product
+        productItem.setAttribute("class", "product-item"); // adds class to product item
+        productItem.textContent = productName; // sets product name as text content
+
+        productItem.addEventListener('click', () => {
+            productItem.parentNode.removeChild(productItem); // removes clicked product item from list
+        })
+
+        return productItem; // returns product item
+    }
+
+    const inventoryList = document.getElementById("inventoryList"); // selects inv list container
+
+    function addProduct(productName) {
+        const productItem = createProductItem(productName); // creates a new product item
+        inventoryList.appendChild(productItem); // appends new product item to inv list
+    }
+
+    addProduct("Product 1");
+    addProduct("Product 2");
+    addProduct("Product 3");
+
+    const addButton = document.querySelector("#addProductButton"); // adds event listener for button to add more products
+    addButton.addEventListener('click', () => {
+        const productName = prompt("Enter product name:"); // prompts user for product name
+        if (productName) {
+            addProduct(productName); // calls function to add product to list
+        }
+    });
+});
