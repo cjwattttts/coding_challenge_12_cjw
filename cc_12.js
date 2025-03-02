@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         productItem.addEventListener('click', () => {
             productItem.parentNode.removeChild(productItem); // removes clicked product item from list
+            console.log(`${productName} removed from inventory`);
         })
         
         return productItem; // returns product item
@@ -66,6 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function addProduct(productName) {
         const productItem = createProductItem(productName); // creates a new product item
         inventoryList.appendChild(productItem); // appends new product item to inv list
+        console.log(`${productName} added to inventory`);
     }
 
     addProduct("Product 1");
