@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
     customerCards.forEach(card => { // listens for clicks on customer card
         card.addEventListener('click', (event) => {
             const customerId = card.id; // gets id of clicked card
-            console.log('Customer card clicked');
+            console.log(`${customerName} clicked`);
             event.stopPropagation(); // stops event bubbling
         });
     });
