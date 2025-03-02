@@ -9,15 +9,16 @@ revenueCard.setAttribute("class", "metric-card"); // assigns class
 revenueCard.setAttribute("id", "revenueCard"); // assigns id
 
 const title = document.createElement('h3');
-title.textContent = "Revenue"; // sets the title
+title.textContent = 'Revenue'; // sets the title
 
 const value = document.createElement('p');
-title.textContent = "$0"; // sets the placeholder value
+title.textContent = '$0'; // sets the placeholder value
 
 revenueCard.appendChild(title); // appends title to metric
 revenueCard.appendChild(value); // appends value to metric
 
 dashboardContainer.appendChild(revenueCard); // appends metric to dashboard
+console.log('Added revenue card to dashboard');
 
 });
 
