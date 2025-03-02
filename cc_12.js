@@ -1,4 +1,5 @@
 //TASK 1
+document.addEventListener('DOMContentLoaded'), () => {
 
 const dashboardContainer = document.getElementById("dashboard"); // selects dashboard container
 const altDashboardSelection = document.querySelector("#dashboard"); // alternative way
@@ -18,6 +19,7 @@ revenueCard.appendChild(value); // appends value to metric
 
 dashboard.appendChild(revenueCard); // appends metric to dashboard
 
+};
 
 
 
