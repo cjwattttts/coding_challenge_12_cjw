@@ -83,18 +83,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //TASK 4
 document.addEventListener('DOMContentLoaded', () => {
-    const customerSection = document.getElementById('customerSelection'); // selects customer selection
+    const customerSection = document.getElementById('customerSection'); // selects customer selection
 
-    customerSection.addEventListener('click', () => {
+    customerSection.addEventListener('click', () => { // listens for clicks 
         console.log('Customer section clicked'); 
     });
 
     const customerCards = document.querySelectorAll('.customer-card');
 
-    customerCards.forEach(card => {
+    customerCards.forEach(card => { // listens for clicks on customer card
         card.addEventListener('click', (event) => {
             console.log('Customer card clicked');
-            event.stopPropagation(); 
+            event.stopPropagation(); // stops event bubbling
         });
     });
 });
