@@ -20,7 +20,14 @@ revenueCard.appendChild(value); // appends value to metric
 dashboardContainer.appendChild(revenueCard); // appends metric to dashboard
 console.log('Added revenue card to dashboard');
 
+//TASK 2 
+
+const metricCards = document.querySelectorAll(".metric-card"); // selects all metric cards
+
+const metricCardsArray = Array.from(metricCards); // converts nodelist to array
+
+metricCardsArray.forEach(card=> { // updates each card
+    card.textContent += " - Updated"; // updates text
+    card.computedStyleMap.backgroundColor = "lightgreen"; // sets background to light green 
+    });
 });
-
-
-
