@@ -24,10 +24,13 @@ console.log('Added revenue card to dashboard');
 
 const metricCards = document.querySelectorAll(".metric-card"); // selects all metric cards
 
-const metricCardsArray = Array.from(metricCards); // converts nodelist to array
+metricCards.forEach(card=> { // updates each card
+    const title = card.querySelector("h3"); 
+    const value = card.querySelector("p"); 
 
-metricCardsArray.forEach(card=> { // updates each card
-    card.textContent += " - Updated"; // updates text
-    card.computedStyleMap.backgroundColor = "lightgreen"; // sets background to light green 
-    });
+    title.textContent += " - Updated"; // changes title
+    value.textContent = "$1000"; // changes value
+
+    card.style.backgroundColor = "lightgreen"; // sets background to light green
+});
 });
