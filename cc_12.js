@@ -40,7 +40,7 @@ metricCards.forEach(card=> { // updates each card
     const value = card.querySelector("p"); 
 
     title.textContent += " - Updated"; // changes title
-    value.textContent = "$1000"; // changes value
+    value.textContent = "$0"; // changes value
 
     card.style.backgroundColor = "lightgreen"; // sets background to light green
 });
