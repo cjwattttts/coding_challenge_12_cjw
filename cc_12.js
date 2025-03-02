@@ -20,13 +20,13 @@ function createCard(titleText, valueText) {
 const dashboardContainer = document.getElementById("dashboard"); // selects dashboard container
 const altDashboardSelection = document.querySelector("#dashboard"); // alternative way
 
-const revenueCard = createCard("Revenue", "$0");
-dashboardContainer.appendChild(revenueCard);
+const revenueCard = createCard("Revenue", "$0"); // sets rev to 0
+dashboardContainer.appendChild(revenueCard); 
 
-const profitCard = createCard("Profit", "$0");
+const profitCard = createCard("Profit", "$0"); // sets profit to 0
 dashboardContainer.appendChild(profitCard);
 
-const expensesCard = createCard("Expenses", "$0")
+const expensesCard = createCard("Expenses", "$0") // sets expenses to 0
 dashboardContainer.appendChild(expensesCard);
 
 console.log('Added revenue, expenses, and profit card to dash');
@@ -45,3 +45,5 @@ metricCards.forEach(card=> { // updates each card
     card.style.backgroundColor = "lightgreen"; // sets background to light green
 });
 });
+
+// TASK 3
