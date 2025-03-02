@@ -8,6 +8,9 @@ const revenueCard = document.createElement("div");
 revenueCard.setAttribute("class", "metric-card"); // assigns class
 revenueCard.setAttribute("id", "revenueCard"); // assigns id
 
+const title = document.createElement('h3')
+title.textContent = "Revenue";
+
 const title = document.createElement("p");
 title.textContent = "Revenue"; // sets the title
 
