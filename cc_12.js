@@ -58,12 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
             productItem.parentNode.removeChild(productItem); // removes clicked product item from list
         })
         
-        console.log('Product removed', productItem.textContent);
-
         return productItem; // returns product item
     }
-
-    console.log('Product added', productItem.textContent);
 
     const inventoryList = document.getElementById("inventoryList"); // selects inv list container
 
