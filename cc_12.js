@@ -12,7 +12,7 @@ const title = document.createElement('h3');
 title.textContent = 'Revenue'; // sets the title
 
 const value = document.createElement('p');
-title.textContent = '$0'; // sets the placeholder value
+value.textContent = '$0'; // sets the placeholder value
 
 revenueCard.appendChild(title); // appends title to metric
 revenueCard.appendChild(value); // appends value to metric
